@@ -103,32 +103,4 @@ Sometimes forwarding strategy does not fit all types of data hazards. For exampl
 
 Here we discuss them together, because they share almost the same way of operation, except some minor difference. Once detects `j`, `jr`, `jal`, `beq`, `bne` instructions in "EX" stage, we need to eliminate following several instructions, as if they have never appears. This can be easily done, because they haven't modify data in Registers or Memories, there is no need to go deeper, what we only need is to set the value to 0 when transferring data among "IF", "ID", "EX" and "MEM". Then, we modify `PCBranchM`, and jump there with the signal `PCSrcM` set to 1. for instructions `jal`, we just need to let the stages "WB" carry out normally, then we can modify the corresponding registers. The difference between `jr` and `j` is that, the source of data are different, one is from 26-bit-long offset, the other is from address stored in specific registers.
 
-
-
-## Performance on test cases
-
-AC: 8/8
-
-Testcase1: Total clock count = 58
-
-Testcase2: Total clock count = 17
-
-Testcase3: Total clock count = 20
-
-Testcase4: Total clock count = 19
-
-Testcase5: Total clock count = 241
-
-Testcase6: Total clock count = 66
-
-Testcase7: Total clock count = 51
-
-Testcase8: Total clock count = 33
-
-
-
-## Conclusion
-
-This project really helps me to understand further about computer architecture, also strengthen my understanding in Verilog language. I found it very useful on my career / study life. 
-
  

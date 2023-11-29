@@ -110,15 +110,6 @@ We directly call Linux APIs open(), read() and write() to implement read and wri
 Just type the number in *_checkpts.txt, and the program will read from it, dump the memory and registers out for manual comparison.
 
 
-
-## Conclusion
-
-By doing assignment 2, I gained lots of information about memory management in C++.
-
-
-
-
-
 ###### Ref:
 
 For LWL / SWL / LWR / SWR instruction,

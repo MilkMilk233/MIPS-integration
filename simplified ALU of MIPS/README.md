@@ -102,8 +102,3 @@ Since we don't simulate the allocation of the registers in this assignment, we u
 
 Except for addi, ori, xori, which uses zero-extent strategy, any other instructions involving immediate uses sign-extent strategy.
 
-
-
-## Conclusion
-
-In this assignment, I learned fundamental usage of Verilog, meanwhile know more about ALU.
